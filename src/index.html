@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script type="text/javascript" src="js/Test.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    
     <title>Document</title>
-    <script>
-        document.write("Hello World!!");
-        window.onload = function() {
-            setInterval(function() {
-                var dd = new Date();
-                document.getElementById("root").innerHTML = dd.toLocaleString();
-            }, 1000);
-        }
-    </script>
+
 </head>
 <body>
-    <div id="root"></div>
+    <div id="root">
+        <div id="clock"></div>
+        <button type="button" onclick="test()">ボタン</button>
+    </div>
 </body>
 </html>
