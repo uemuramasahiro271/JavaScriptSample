@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="js/Test.js"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/post.js"></script>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     
-    <title>Document</title>
+    <title>Todoアプリ</title>
+
+    <script type="text/javascript">
+        $(function() {
+            $('#header').load('parts/header.html');
+            $('#main').load('parts/main.html');
+            $('#footer').load('parts/footer.html');
+        });
+    </script>
 
 </head>
 <body>
-    <div id="root">
-        <button type="button" onclick="test()">ボタン</button>
-        <button type="button" onclick="windowAlert()">確認</button>
-        <div id="mouseover_test1">マウスオーバーしてください。</div>
-        <div id="mouseover_test2">マウスオーバーしてください。</div>
-        <div id="clock"></div>
-    </div>
+    <div id="header"></div>
+    <div id="main"></div>
+    <div id="footer"></div>
 </body>
 </html>

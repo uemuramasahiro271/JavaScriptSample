@@ -1,14 +1,12 @@
-button {
-    width: 100px;
-    height: 30px;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
-.mouseover_style {
-    font-size : 28px;
-    background-color: aqua;
-}
-
-.mouseleave_style {
-    font-size : 14px;
-    background-color: white;
+#main {
+    flex: 1;
+    width: 70%;
+    margin: 0 auto;
 }

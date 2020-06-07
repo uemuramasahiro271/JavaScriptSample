@@ -1,0 +1,19 @@
+#form_area {
+    width: 60%;
+    margin: 10px auto;
+}
+
+#form_area textarea {
+    width: 400px;
+    height: 200px;
+    margin-top: 7px;
+}
+
+#form_area button {
+    width: 100px;
+    height: 26px;
+}
+
+#contents_area {
+
+}
