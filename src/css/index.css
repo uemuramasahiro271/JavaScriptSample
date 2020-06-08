@@ -5,8 +5,17 @@ body {
     margin: 0;
 }
 
+aside {
+    width: 25%;
+    background-color: rgb(233, 233, 233);
+}
+
+#main_container {
+    display: flex;
+    flex: 1;
+}
+
 #main {
     flex: 1;
-    width: 70%;
-    margin: 0 auto;
 }
+

@@ -1,0 +1,23 @@
+.item {
+    margin: 0px 15px;
+    white-space: pre-wrap;
+}
+
+.item_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contributor {
+    display: inline;
+}
+
+.date { 
+    display: inline;
+}
+
+.border {
+    border: solid 1px gray;
+    margin: 15px 0px;
+}
