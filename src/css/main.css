@@ -1,6 +1,14 @@
+main {
+    padding-top: 10px;
+}
+
 #form_area {
     width: 60%;
-    margin: 10px auto;
+    margin: 0px auto;
+}
+
+#form_area .border {
+    margin-top: 10px;
 }
 
 #form_area textarea {
@@ -16,5 +24,5 @@
 
 #contents_area {
     width: 60%;
-    margin: 10px auto;
+    margin: 0px auto;
 }

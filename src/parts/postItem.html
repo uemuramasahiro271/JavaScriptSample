@@ -8,11 +8,33 @@
 </head>
 <body>
     <div class="item">
-        <div class="item_header">
-            <div class="contributor"></div>
-            <div class="date"></div>
-        </div>
-        <div class="text"></div>
+        <table class="item_header_table">
+            <tbody>
+                <tr class="item_header">
+                    <td id="v_post_no" class="post_no">No：</td>
+                    <td id="v_date" class="date" align="right"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="item_content_table">
+            <tbody>
+                <tr class="item_content">
+                    <td>投稿者：</td>
+                    <td id="v_contributor" class="contributor"></td>
+                </tr>
+                <tr class="item_content">
+                    <td aline="top">内容　：</td>
+                    <td aline="top" id="v_text" class="text"></td>
+                </tr>
+                <tr class="item_content">
+                    <td colspan="2" align="right">
+                        <button id="v_edit_btn">編集</button>
+                        <button id="v_delete_btn">削除</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
     </div>
     <div class="border"></div>
 </body>
