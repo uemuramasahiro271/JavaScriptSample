@@ -3,26 +3,15 @@
     background-color: whitesmoke;
 }
 
-.contributor {
-
-}
-
-.date { 
-
+.item_content_table button {
+    background-color: darkgray;
 }
 
 table {
     width: 100%;
     border-spacing: 0;
-
-    /* border-collapse: separate; */
-    /* padding: 20px; */
     border-spacing: 0px 3px;
     background-color: whitesmoke;
-}
-
-.item_header_table { 
-    
 }
 
 .item_content_table {
@@ -42,10 +31,6 @@ td {
     margin: 0;
 }
 
-.item_header {
-    /* background-color: rgb(135, 224, 253); */
-}
-
 .item_content {
     background-color: rgba(245, 245, 245, 0.664);
 }
@@ -57,5 +42,10 @@ td {
 
 .border {
     border: solid 1px gray;
-    /* margin: 10px 0px; */
+}
+
+.modal_window {
+    width: 200px;
+    height: 400px;
+    background-color: aqua;
 }

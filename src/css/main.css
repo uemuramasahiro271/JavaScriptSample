@@ -8,11 +8,11 @@ main {
 }
 
 #form_area .border {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 #form_area textarea {
-    width: 400px;
+    width: 350px;
     height: 100px;
     margin-top: 7px;
 }

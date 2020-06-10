@@ -9,14 +9,6 @@ class PostItemCreator {
     }
 
     create() {
-        // var id = `content_${postCount}`;
-        // var date = new Date();
-        // $("#contents_area").append(`<article id="${id}"></article>`);
-        // $(`#${id}`).append(`<div class="item"></div>`);
-        // $(`#${id} div`).append(`<p>投稿者：${this.contributor}</p>`);
-        // $(`#${id} div`).append(`内容：\n${this.text}`);
-        // $(`#${id}`).append(`<div class="border"></div>`);
-
         var count = `${postCount}`;
         var id = `content_${postCount}`;
         var date = new Date();
@@ -38,8 +30,6 @@ class PostItemCreator {
             $(`#contributor${count}`).text(`${contributor}`);
             $(`#text${count}`).text(`${text}`);
         });
-
-        //$(`#contributor_aa`).text("aa");
     }
 }
 
@@ -49,7 +39,7 @@ class PostItemCreator {
 //     });
 // }
 
-function onClick() {
+function post() {
 
     var contributor = $("#contributor_input").val();
     var text = $("#contributor_textarea").val();
@@ -66,4 +56,12 @@ function onClick() {
     // $(document).ready(function() {
     //     $('p').css('color', 'blue');
     // });
+}
+
+function postEdit(id) {
+    
+}
+
+function postDelete(id) {
+    $(`#${id}`).parents('.item_container').remove();
 }
