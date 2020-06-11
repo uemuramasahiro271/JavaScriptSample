@@ -45,7 +45,12 @@ td {
 }
 
 .modal_window {
-    width: 200px;
-    height: 400px;
-    background-color: aqua;
+    width: 60%;
+    margin: 0px auto;
+}
+
+.modal_window textarea {
+    width: 350px;
+    height: 100px;
+    margin-top: 7px;
 }

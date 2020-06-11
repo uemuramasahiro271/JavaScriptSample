@@ -40,27 +40,30 @@
     </div>
 
     <!--  モーダルで表示する部分-->
-    <div id="modal" class="modal_window" style="display:none;">
-        <button onclick="edit()">編集</button>
-        <button onclick="cancel()">キャンセル</button>
+    <div id="modal" style="display:none;">
+        <div class="modal_window">
+            <div>
+                <label for="edit_contributor_input">投稿者</label>
+                <input type="text" name="contributor_txt" id="edit_contributor_input">
+            </div>
+            <div>
+                <textarea id="edit_contributor_textarea"></textarea>
+            </div>
+            <button onclick="editComplete()">完了</button>
+            <button onclick="editCancel()">キャンセル</button>
+        </div>
     </div>
 
     <script>
         $(".modal-button").modaal({
           content_source: '#modal',
+          width: 600, height: 250,
+          animation_speed: 300,
           hide_close: true,
           overlay_close: false,
-
-          width: 200, height:400
+          outer_controls: true,
+          before_open: openModal
         });
-
-        function edit() {
-            
-        }
-
-        function cancel() {
-            $(".modal-button").modaal('close');
-        }
       </script>
 </body>
 </html>

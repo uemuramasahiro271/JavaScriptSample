@@ -1,5 +1,6 @@
 
 var postCount = 1;
+var editId;
 
 class PostItemCreator {
 
@@ -59,7 +60,21 @@ function post() {
 }
 
 function postEdit(id) {
-    
+    var contributor = $(`#${id}`).parents('.item_container').find(".contributor").text();
+    var text = $(`#${id}`).parents('.item_container').find(".text").text();
+    $("#edit_contributor_input").val(contributor);
+    $("#edit_contributor_textarea").val(text);
+}
+
+function editComplete() {
+    var contributor = $("#edit_contributor_input").val();
+    var text = $("#edit_contributor_textarea").val();
+
+    $(".modal-button").modaal('close');
+}
+
+function editCancel() {
+    $(".modal-button").modaal('close');
 }
 
 function postDelete(id) {
