@@ -1,4 +1,5 @@
 .item {
+    min-height: 174px;
     padding: 5px;
     background-color: whitesmoke;
 }
@@ -16,6 +17,11 @@ table {
 
 .item_content_table {
     padding: 5px;
+    height: 100%;
+}
+
+table tr:nth-child(1) {
+    height: 100%;
 }
 
 table td:nth-child(1) {

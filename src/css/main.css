@@ -26,3 +26,13 @@ main {
     width: 60%;
     margin: 0px auto;
 }
+
+.bulletin_board_title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 7px;
+    border-top: solid 1px gray;
+    border-bottom: solid 1px gray;
+    text-align: center;
+}

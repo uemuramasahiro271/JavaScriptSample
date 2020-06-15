@@ -64,11 +64,16 @@ function postEdit(id) {
     var text = $(`#${id}`).parents('.item_container').find(".text").text();
     $("#edit_contributor_input").val(contributor);
     $("#edit_contributor_textarea").val(text);
+
+    editId = $(`#${id}`).parents('.item_container').parent().attr("id");
 }
 
 function editComplete() {
     var contributor = $("#edit_contributor_input").val();
     var text = $("#edit_contributor_textarea").val();
+
+    $(`#${editId}`).find(".contributor").text(contributor);
+    $(`#${editId}`).find(".text").text(text);
 
     $(".modal-button").modaal('close');
 }
