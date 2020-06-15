@@ -1,4 +1,3 @@
-
 var postCount = 1;
 var editId;
 
@@ -34,12 +33,6 @@ class PostItemCreator {
     }
 }
 
-// window.onload = function() {
-//     $(document).ready(function() {
-//         $('p').css('color', 'blue');
-//     });
-// }
-
 function post() {
 
     var contributor = $("#contributor_input").val();
@@ -51,21 +44,15 @@ function post() {
     $("#contributor_input").val("");
     $("#contributor_textarea").val("");
     postCount++;
-
-    // $('#test p').text(text);
-
-    // $(document).ready(function() {
-    //     $('p').css('color', 'blue');
-    // });
 }
 
 function postEdit(id) {
-    var contributor = $(`#${id}`).parents('.item_container').find(".contributor").text();
-    var text = $(`#${id}`).parents('.item_container').find(".text").text();
+    var contributor = $(`#${id}`).parents('.item').find(".contributor").text();
+    var text = $(`#${id}`).parents('.item').find(".text").text();
     $("#edit_contributor_input").val(contributor);
     $("#edit_contributor_textarea").val(text);
 
-    editId = $(`#${id}`).parents('.item_container').parent().attr("id");
+    editId = $(`#${id}`).parents('.item').parent().attr("id");
 }
 
 function editComplete() {
