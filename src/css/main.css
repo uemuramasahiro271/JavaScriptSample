@@ -22,6 +22,11 @@ main {
     height: 26px;
 }
 
+#seach_area {
+    width: 60%;
+    margin: 0px auto;
+}
+
 #contents_area {
     width: 60%;
     margin: 0px auto;

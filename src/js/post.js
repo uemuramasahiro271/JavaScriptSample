@@ -52,7 +52,7 @@ function postEdit(id) {
     $("#edit_contributor_input").val(contributor);
     $("#edit_contributor_textarea").val(text);
 
-    editId = $(`#${id}`).parents('.item').parent().attr("id");
+    editId = $(`#${id}`).parents('.item_container').parent().attr("id");
 }
 
 function editComplete() {
@@ -70,5 +70,5 @@ function editCancel() {
 }
 
 function postDelete(id) {
-    $(`#${id}`).parents('.item_container').remove();
+    $(`#${id}`).parents('.item_container').parent().remove();
 }
